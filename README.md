@@ -65,8 +65,8 @@ remember that _images must have the same height and width (squared)_ and must be
 
 ## Advanced
 ### Methods
-* **show( callback )** : Fade the rings and start their animation. This is automatically called when `autostart` is `true`. 
-* **align( callback )** : Align the rings and finish the animation.
+* **$.metroProgressMultiring('show', callback )** : Fade the rings and start their animation. This is automatically called when `autostart` is `true`. 
+* **$.metroProgressMultiring('align', callback )** : Align the rings and finish the animation.
 
 ### Settings
 These settings are passed during initialization:
