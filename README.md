@@ -27,23 +27,28 @@ The images in the `img` folder:
 
 ## Quickstart
 For those lazy to read the beautiful docs, the usage of _Metro Progress Multirings_ is very simple:
+`
     <div id="#fancy-metro-rings-loading"></div>
     <script type="text/javascript">
       $('#fancy-metro-rings-loading').metroProgressMultiring();
     </script>
+`
     
 You can also have an image in the center of it:
+`
     <div id="#fancy-metro-rings-loading">
         <img src="image/in/the/center.png" style="width:100%" />
     </div>
+`
 
 When your scripts are done doing whatever time or processor consuming thing, they should just
 run the `align` method to align the rings (or you can just fadeout if you don' want the Wi-Fi figure):
-    $('#fancy-metro-rings-loading').metroProgressMultiring('align');
+`    $('#fancy-metro-rings-loading').metroProgressMultiring('align');`
 
 By default, images should be inside the `img/metro-progress-multiring` folder (relative to your HTML file
 running this script). However, you can define your own images or folder like this (starting with the 
 inner-most ring):
+`
     $('#fancy-metro-rings-loading').metroProgressMultiring( {
         rings : [
             'path/to/ring1.png',
@@ -51,6 +56,7 @@ inner-most ring):
             'path/to/ring3.png'
         ]
     } );
+`
 
 You may aswell define as many rings as you want, this script will generate the animation for each one. Just 
 remember that _images must have the same height and width (squared)_ and must be transparent 
